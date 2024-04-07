@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="blog">
+        <div class="container">
+            <h2>Blog</h2>
+            <div class="blog-post">
+                <h3>10 Essential Tools for Web Developers</h3>
+                <p>Discover 10 essential tools that every web developer should have in their toolkit.</p>
+                <button onclick="toggleVisibility('post1')">Read More</button>
+                <div id="post1-details" style="display: none;">
+                    <p>Learn about the most useful tools for web development, including code editors, version control systems, and browser extensions.</p>
+                </div>
+            </div>
+            <div class="blog-post">
+                <h3>Introduction to Responsive Web Design</h3>
+                <p>Explore the principles of responsive web design and how to create websites that adapt to different screen sizes.</p>
+                <button onclick="toggleVisibility('post2')">Read More</button>
+                <div id="post2-details" style="display: none;">
+                    <p>Learn about media queries, flexible grids, and other techniques for building responsive and mobile-friendly websites.</p>
+                </div>
+            </div>
+            <!-- Add more blog posts as needed -->
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Joseph Jaco</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        function toggleVisibility(postId) {
+            var details = document.getElementById(postId + '-details');
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>

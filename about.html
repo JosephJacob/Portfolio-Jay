@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Welcome to my portfolio website! I'm a passionate software developer with a strong background in web development. With several years of experience, I specialize in building responsive and user-friendly web applications.</p>
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>SQL & NoSQL Databases</li>
+                <li>RESTful APIs</li>
+                <li>Git & Version Control</li>
+                <li>Responsive Web Design</li>
+            </ul>
+            <h3>Experience</h3>
+            <p>I have worked with various clients and companies, developing custom web solutions to meet their specific needs. My experience includes both front-end and back-end development, as well as collaboration with cross-functional teams.</p>
+            <h3>Education</h3>
+            <p>I hold a Diploma in Computer Science from St. Paul's University, where I gained a solid foundation in software engineering principles and practices.</p>
+            <h3>Projects</h3>
+            <ul>
+                <li>
+                    <a href="https://github.com/JosephJacob/Izza-Pizza">Izza Piza</a> - An online pizza ordering website.
+                    <button onclick="toggleVisibility('izza-piza')">Show Details</button>
+                    <div id="izza-piza-details" style="display: none;">
+                        <p>Izza Piza is an online platform that allows users to order pizzas for delivery or pickup.</p>
+                        <!-- Additional details about the project -->
+                    </div>
+                </li>
+                <li>
+                    <a href="https://github.com/JosephJacob/Akan-Name">Akan Name</a>
+                    <button onclick="toggleVisibility('izza-piza')">Show Details</button>
+                    <div id="izza-piza-details" style="display: none;">
+                        <p> This is a website that allows you to enter your date of birth and generates for you a name that would have been used to name you if you were named according to the Ghananian naming system, hence the Akan Name.</p>
+                        <!-- Additional details about the project -->
+                    </div>
+                </li>
+                <li>
+                    <a href="https://github.com/JosephJacob/Delani-Studio">Delani Studio</a> - An online pizza ordering website.
+                    <button onclick="toggleVisibility('izza-piza')">Show Details</button>
+                    <div id="izza-piza-details" style="display: none;">
+                        <p>This is a replice of a website.</p>
+                        Delani Studio is an exact replica of an existing website to the dot !!!
+                    </div>
+                </li>
+            </ul>
+            <p>For more details about my work experience and projects, please visit my <a href="https://linkedin.com/JosephJacob">LinkedIn</a> profile.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Joseph Jaco</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script>
+        function toggleVisibility(projectId) {
+            var details = document.getElementById(projectId + '-details');
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
